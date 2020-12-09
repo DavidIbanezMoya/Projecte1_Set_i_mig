@@ -24,6 +24,9 @@ while flag_ejemplo==True:
           nombrecorrecto=False
           while nombrecorrecto==False:
               nombre=str(input(f"Nombre del jugador {i + 1}: "))
+              while nombre in jugadores:
+                  print("Nombre de jugador ya existe,inserta otro")
+                  nombre = str(input(f"Nombre del jugador {i + 1}: "))
               for x in nombre:
                   if x.isspace() == True:
                       print("Tiene espacios")
@@ -39,8 +42,23 @@ while flag_ejemplo==True:
                   continue
   print(jugadores)
   flag_ejemplo = False
+prioridad = 0
+dicc = {}
+jugadoresOrden= []
+mazo2 = mazo.copy()
 for i in range(len(jugadores)):
-   carta = random.choice(mazo)
-   mazo.pop(mazo.index(carta))
-   print("Jugador {} {}".format(jugadores[i],carta))
-print(mazo)
+   carta = random.choice(mazo2)
+   mazo2.pop(mazo2.index(carta))
+   dicc[jugadores[i]]= carta
+
+print(dicc)
+for i in dicc:
+    jugadoresOrden.append(i)
+    cartaMax = i[0]
+for k in range(len(jugadoresOrden)):
+    for j in range(len(jugadoresOrden)-1):
+        if dicc[jugadoresOrden[j]][0] < dicc[jugadoresOrden[j+1]][0]:
+            jugadoresOrden[j],jugadoresOrden[j+1] = jugadoresOrden[j+1],jugadoresOrden[j]
+        elif dicc[jugadoresOrden[j]][0] == dicc[jugadoresOrden[j+1]][0]:
+            print()
+print(jugadoresOrden)
