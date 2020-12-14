@@ -9,6 +9,8 @@ mazo=[(1,"oros",1),(1,"copas",1),(1,"bastos",1),(1,"espadas",1),(2,"oros",2),(2,
 flag_ejemplo=True
 jugadores=[]
 nombrecorrecto=True
+puntos = 20
+mano = 0
 while flag_ejemplo==True:
   njug = int(input("Cuantos jugadores participaran?\n"))
   if njug<2:
@@ -20,7 +22,6 @@ while flag_ejemplo==True:
   if njug>=2 and njug<=8:
       print(f"Empezando partida con {njug} jugadores")
       for i in range (njug):
-          print(i)
           nombrecorrecto=False
           while nombrecorrecto==False:
               nombre=str(input(f"Nombre del jugador {i + 1}: "))
@@ -55,6 +56,7 @@ print(dicc)
 for i in dicc:
     jugadoresOrden.append(i)
     cartaMax = i[0]
+
 for k in range(len(jugadoresOrden)):
     for j in range(len(jugadoresOrden)-1):
         if dicc[jugadoresOrden[j]][0] < dicc[jugadoresOrden[j+1]][0]:
@@ -62,3 +64,10 @@ for k in range(len(jugadoresOrden)):
         elif dicc[jugadoresOrden[j]][0] == dicc[jugadoresOrden[j+1]][0]:
             print()
 print(jugadoresOrden)
+diccJug= {}
+cartas = []
+info = [cartas]
+for jugador in range(len(jugadoresOrden)):
+    #diccJug[jugadoresOrden[jugador]] =[[dicc[jugadoresOrden[jugador]]],"jugando","jugando",jugador,dicc[jugadoresOrden[jugador]][2],0,puntos,mano]
+    diccJug[jugadoresOrden[jugador]] =[[],"jugando","jugando",jugador,0,0,puntos,mano]
+print(diccJug)
