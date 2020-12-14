@@ -55,10 +55,15 @@ for i in range(len(jugadores)):
 print(dicc)
 for i in dicc:
     jugadoresOrden.append(i)
+    cartaMax = i[0]
+
 for k in range(len(jugadoresOrden)):
     for j in range(len(jugadoresOrden)-1):
         if dicc[jugadoresOrden[j]][0] < dicc[jugadoresOrden[j+1]][0]:
             jugadoresOrden[j],jugadoresOrden[j+1] = jugadoresOrden[j+1],jugadoresOrden[j]
+        elif dicc[jugadoresOrden[j]][0] == dicc[jugadoresOrden[j+1]][0]:
+            print()
+print(jugadoresOrden)
 diccJug= {}
 cartas = []
 info = [cartas]
