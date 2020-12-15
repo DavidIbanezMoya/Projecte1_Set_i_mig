@@ -9,4 +9,4 @@ Autores:
 
 David Ibáñez:   dibanezmoya@cf.iesesteveterradas.cat
 Iñaki Hidalgo:  ihidalgotoca.cf@iesesteveterradas.cat
-Mykhailo Yakima:myakyma.cf@iesesteveterradas.cat
+Mykhailo Yakyma:myakyma.cf@iesesteveterradas.cat
