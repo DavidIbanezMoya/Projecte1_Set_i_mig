@@ -8,5 +8,7 @@ Para poder jugar correctamente tendrás que abrir la aplicación de python la cu
 Autores:
 
 David Ibáñez:   dibanezmoya@cf.iesesteveterradas.cat
+
 Iñaki Hidalgo:  ihidalgotoca.cf@iesesteveterradas.cat
+
 Mykhailo Yakyma:myakyma.cf@iesesteveterradas.cat
