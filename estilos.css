@@ -1,0 +1,47 @@
+.contenido {
+  display: flex;
+  flex-direction: column;
+}
+.titulo {
+  margin: auto;
+  width: 50%;
+  border: 3px solid blue;
+  padding: 10px;
+  text-align: center;
+}
+
+header {
+  margin: 5px;
+  text-align: center;
+  background-color: gray;
+}
+
+.inf {
+  border: 2px solid green;
+  margin: 8px;
+  border-radius: 20px;
+  text-align: left;
+  background-color: rgb(212, 198, 224);
+}
+.informe {
+  text-align: left;
+  margin: 10px;
+  border: 3px solid red;
+  display: inline-flex;
+}
+table, th, td{
+  border: solid black 1px;
+}
+table {
+  margin:auto;
+  margin-bottom:15px;
+}
+th {
+ font-weight: bold;
+}
+td {
+ font-weight: lighter;
+}
+p {
+  text-align: center;
+}
