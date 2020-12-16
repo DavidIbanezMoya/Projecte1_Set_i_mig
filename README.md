@@ -4,6 +4,7 @@ En este proyecto tenemos la tarea de realizar el juego de siete y media. El jueg
 Hay diferentes roles como banca o no, y diferentes condiciones que pueden llevar a la victoria.
 
 Para poder jugar correctamente tendrás que abrir la aplicación de python la cual se llama "Sieye_y_medio.py". Ahí ya podrás seleccionar el modo de juego y la cantidad de jugadores que van a jugar. También podras encontrar un modelo de bases de datos u otros diagramas y archivos, esos otros archivos no serán necesarios para jugar, pero te pueden servir si lo que buscas es ver como funciona el sistema del juego, así el como se almacenan los datos o como se relacionan entre sí.
+Necesitaras tener pymsql para el correcto funcionamiento de algunas partes del programa y en la carpeta habran unos archivos xml los cuales seran necesarios para el funcionamiento del juego.
 
 Autores:
 
