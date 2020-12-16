@@ -1,6 +1,7 @@
 .contenido {
   display: flex;
   flex-direction: column;
+  margin: 2rem;
 }
 .titulo {
   margin: auto;
@@ -12,8 +13,21 @@
 
 header {
   margin: 5px;
+  height: 15px;
   text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  scroll-margin-top: 1em;
+
+}
+
+.link {
   background-color: gray;
+  margin: -2px;
+  padding: 3px 8px;
+
 }
 
 .inf {
@@ -21,7 +35,7 @@ header {
   margin: 8px;
   border-radius: 20px;
   text-align: left;
-  background-color: rgb(212, 198, 224);
+  background-color: rgb(178, 172, 216);
 }
 .informe {
   text-align: left;
